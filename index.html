@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="./files/logo.png"  type="image/gif" sizes="16x16">
+	<title>Aravind Holidays | best in service</title>
+	<link rel="stylesheet" href="./files/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./files/style.css">
+	<script src="./files/jquery.min.js.download"></script>
+	<script src="./files/bootstrap.min.js.download"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button id="collapse" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavBar">
+					<span style="color: white" ;="" class="icon-bar"></span>
+					<span style="color: white" ;="" class="icon-bar"></span>
+					<span style="color: white" ;="" class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="#"><span class="logo"><img src="./files/logo.png" height="30" width="30" ></span></a>
+			</div>
+			<div class="collapse navbar-collapse" id="mynavBar">
+				<ul class="nav navbar-nav navbar-right">
+					<li id="home-button"><a class="page-scroll" data-toggle="collapse" data-target=".in" href="#home"><span class="link-color">Home</span></a></li>
+					<li id="about-button"><a class="page-scroll" data-toggle="about" href="#About"><span class="link-color">About us</span></a></li>
+					<li id="service-button"><a class="page-scroll" data-toggle="service" href="#services"><span class="link-color">Services</span></a></li>
+					<li id="team-button"><a class="page-scroll" data-toggle="service" href="#team"><span class="link-color">Offers</span></a></li>
+					<li id="contact-button"><a class="page-scroll" data-toggle="contact" href="#contact"><span class="link-color">Contact Us</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid background-cover">
+		<div class="row" id="home">
+			<h1>Aravind Holidays</h1>
+			<div class="intro-option2">
+				<h1>Best in service</h1>
+			</div>
+			<div class="button-area">
+				<div class="explore">Explore us</div>	
+				<div class="booking">Booking</div>
+			</div>
+		</div>
+	</div>
+	<section class="know-more" id="About">
+	<div class="know-us">
+		<h1 class="text-center">Know us</h1>
+	</div>
+	<p class="know-para">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
+</section>
+</body>
+	<script type="text/javascript">
+	$(document).ready(function () {
+	    //Disable mouse right click
+	    $("body").on("contextmenu",function(e){
+	        return false;
+	    });
+	});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.collapse').click(function(){
+				$("nav").toggleClass('scrolled');
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				$("nav").toggleClass('scrolled', $(this).scrollTop() > 1);
+				$('.collapse').toggleClass('scrolled', $(this).scrollTop() > 2);
+
+				$("nav").toggleClass('boxshadow', $(this).scrollTop() > 200);
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$(document).ready(function () {
+	    $("nav").find("li").on("click", "a", function () {
+	        $('.navbar-collapse.in').collapse('hide');
+	    });
+	});
+		});
+</script>
+
+
+</body>
+</html>
