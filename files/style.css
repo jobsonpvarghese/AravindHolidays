@@ -1,158 +1,7 @@
-.navbar{
-  padding-right: 8%;
-}
-.navbar li{
-  padding-left: 20px;
-}
-.background-cover h1{
-  font-size: 110px;
-  text-align: center;
-  transform: translateY(250px);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgba(49, 40, 63, 0.911);
-}
-.intro-option2{
-  display: block;
-}
-.intro-option2 h1 {
-  font-size: 30px;
-  font-weight: 500;
-}
-.intro-option2 h1::before {
-  display: inline-block;
-  content: "";
-  border-top: .3rem solid rgb(58, 53, 65);
-  width: 10rem;
-  margin: 0 1rem;
-  transform: translateY(-.7rem);
-}
-.button-area{
-  text-align: center;
-  transform: translateY(280px)
-}
-.explore{
-  font-size: 25px;
-  text-align: center;
-  display: inline;
-  border: 2px solid rgb(36, 38, 58);;
-  padding: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  border-radius: 25px;
-  margin-right: 10px;
-}
-.booking{
-  font-size: 25px;
-  text-align: center;
-  display: inline;
-  border: 2px solid rgb(36, 38, 58);;
-  padding: 10px;
-  padding-right: 25px;
-  padding-left: 25px;
-  border-radius: 25px;
-  background-color: rgb(36, 38, 58);
-  color: white;
-  
-}
-.explore:hover{
-  background-color:rgb(36, 38, 58);
-  color: white; 
-  cursor: pointer;
-}
-.booking:hover{
-  background-color:rgb(63, 78, 214);
-  border: 2px solid rgb(63, 78, 214);
-  cursor: pointer;
-}
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
-@media only screen and (max-width: 736px) {
-    .navbar{
-      padding-right: 0 !important;
-    }
-    .explore{
-      display: block;
-      font-size: 20px;
-      text-align: center;
-      display: inline;
-      border: 2px solid rgb(36, 38, 58);;
-      padding: 8px;
-      padding-right: 20px;
-      padding-left: 20px;
-      border-radius: 25px;
-      margin-right: 10px;
-    }
-    .booking{
-      display: block;
-      font-size: 20px;
-      text-align: center;
-      display: inline;
-      border: 2px solid rgb(36, 38, 58);;
-      padding: 8px;
-      padding-right: 20px;
-      padding-left: 20px;
-      border-radius: 25px;
-      background-color: rgb(36, 38, 58);
-      color: white;
-      
-    }
-    
-  .navbar li{
-  padding-left: opx !important;
-  }
-
-    .navbar-custom {
-        min-height: 0px;
-    }
-    .navbar-toggle {
-        margin-right: 10px;
-        border: none;
-        color: black;
-    }
-    .collapsing,
-    .in {
-        background-color:  rgba(24, 51, 128, 0.952);
-    }
-    .collapsing ul>li>a,
-    .in ul>li>a {
-        color: #FFFFFF!important;
-        text-shadow: #FFFFFF 0px 0px 0.2px!important;
-    }
-    .navbar-collapse .navbar-nav .active a,
-    .navbar-collapse .navbar-nav .active a:hover,
-    .navbar-collapse.navbar-nav .active a:focus {
-        background-color: transparent;
-        color: rgba(0, 0, 0, 0.938)!important;
-        text-shadow: black 0px 0px 0.2px!important;
-    }
-    .navbar-collapse>.navbar-nav>li>a:hover,
-    .navbar-collapse>.navbar-nav>li>a:focus {
-        background-color: transparent;
-        color: black !important;
-    }
-    .background-cover{
-      height: 100vh;
-      width: 100%;
-    }
-    .background-cover h1{
-      transform: translateY(200px) !important;
-      font-size: 50px;
-    }
-    .intro-option2 h1{
-      font-size: 26px;
-    }
-}
-@media only screen and (max-width:580px)
-{
-  .background-cover h1{
-    font-size: 40px !important;
-  }
-  .intro-option2 h1{
-    font-size: 24px !important;
-  }
-}
-
-
+/*Desktop view*/
 .background-cover{
 	background:url(../img/bg.jpg);
   background-size: cover;
@@ -204,3 +53,183 @@
 .link-color:hover{
   color:rgba(236, 148, 32, 0.89);
 }
+
+.navbar{
+  padding-right: 8%;
+}
+.navbar li{
+  padding-left: 20px;
+}
+.background-cover h1{
+  font-size: 110px;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  transform: translateY(200px);
+  color: rgba(49, 40, 63, 0.911);
+}
+.intro-option2{
+  display: block;
+}
+.intro-option2 h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.intro-option2 h1::before {
+  display: inline-block;
+  content: "";
+  border-top: .3rem solid rgb(58, 53, 65);
+  width: 10rem;
+  margin: 0 1rem;
+  transform: translateY(-.7rem);
+}
+.button-area{
+  text-align: center;
+  transform: translateY(250px)
+}
+.explore{
+  font-size: 25px;
+  text-align: center;
+  display: inline;
+  border: 2px solid rgb(36, 38, 58);;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.booking{
+  font-size: 25px;
+  text-align: center;
+  display: inline;
+  border: 2px solid rgb(36, 38, 58);;
+  padding: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 25px;
+  background-color: rgb(36, 38, 58);
+  color: white;
+  
+}
+.explore:hover{
+  background-color:rgb(36, 38, 58);
+  color: white; 
+  cursor: pointer;
+}
+.booking:hover{
+  background-color:rgb(63, 78, 214);
+  border: 2px solid rgb(63, 78, 214);
+  cursor: pointer;
+}
+.cover-footer{
+  transform: translateY(400px);
+  padding-left: 7%;
+
+
+}
+.cover-footer .location{
+  font-size: 25px;
+}
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+
+/*Responsive design*/
+
+@media only screen and (max-width: 736px) {
+    .navbar{
+      padding-right: 0 !important;
+    }
+  
+    .explore{
+      display: block;
+      font-size: 20px;
+      text-align: center;
+      display: inline;
+      border: 2px solid rgb(36, 38, 58);;
+      padding: 8px;
+      padding-right: 20px;
+      padding-left: 20px;
+      border-radius: 25px;
+      margin-right: 10px;
+    }
+    .booking{
+      display: block;
+      font-size: 20px;
+      text-align: center;
+      display: inline;
+      border: 2px solid rgb(36, 38, 58);;
+      padding: 8px;
+      padding-right: 20px;
+      padding-left: 20px;
+      border-radius: 25px;
+      background-color: rgb(36, 38, 58);
+      color: white;
+      
+    }
+  .navbar li{
+  padding-left: opx !important;
+  }
+
+    .navbar-custom {
+        min-height: 0px;
+    }
+    .navbar-toggle {
+        margin-right: 10px;
+        border: none;
+        color: black;
+    }
+    .collapsing,
+    .in {
+        background-color:  rgba(24, 51, 128, 0.952);
+    }
+    .collapsing ul>li>a,
+    .in ul>li>a {
+        color: #FFFFFF!important;
+        text-shadow: #FFFFFF 0px 0px 0.2px!important;
+    }
+    .navbar-collapse .navbar-nav .active a,
+    .navbar-collapse .navbar-nav .active a:hover,
+    .navbar-collapse.navbar-nav .active a:focus {
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.938)!important;
+        text-shadow: black 0px 0px 0.2px!important;
+    }
+    .navbar-collapse>.navbar-nav>li>a:hover,
+    .navbar-collapse>.navbar-nav>li>a:focus {
+        background-color: transparent;
+        color: black !important;
+    }
+    .background-cover{
+      height: 100vh;
+      width: 100%;
+    }
+    .background-cover h1{
+      transform: translateY(80px) !important;
+      font-size: 45px;
+    }
+    .background-cover .button-area{
+      transform: translateY(120px) !important;
+    }
+    .intro-option2 h1{
+      font-size: 20px !important;
+    }
+    .cover-footer{
+      transform: translateY(180px);
+      text-align: left;
+    
+    }
+    .cover-footer .location{
+      font-size: 16px !important;
+    }
+    
+}
+@media only screen and (max-width:580px)
+{
+  .background-cover h1{
+
+    font-size: 40px !important;
+  }
+  .intro-option2 h1{
+    font-size: 24px !important;
+  }
+}
+
+
