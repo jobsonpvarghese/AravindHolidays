@@ -7,8 +7,7 @@
 /*Fonts*/
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
-
-
+@import url('https://fonts.googleapis.com/css?family=Anton|Carter+One');
 
 /*Desktop view*/
 .background-cover{
@@ -330,8 +329,56 @@
   50%  { opacity: .5; }
   100% { opacity: 1; }
 }
+.about{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.about img{
+  height: 100%;
+  width: 100%;
+}
+.about-typo{
+  padding-bottom: 3%;
+}
 
+.about h2{
+    font-size:40px;
+font-family: 'Carter One', cursive;    
+}
+.about-content h3{
+  font-family: 'Carter One', cursive;
+}
+.about-content{
+  padding:5%;
+  box-shadow:  5px 10px 10px #2b2a2a77;
+  background-color: rgba(238, 235, 235, 0.932);
+  border-radius: 5px;
+  
+}
+.about-box{
+  padding-top: 5%;
+ 
+  z-index: 999;
+}
+/*video*/
+.video-section{
+ 
+	position:relative;
+	width:100%;
+	max-height:400px;
+	overflow:hidden;
+}
+#video-elem{
+	width:100%;
+}
+#info video{
+  padding-top:6% ;
+  background-attachment: fixed;
+}
 
+.info-video{
+  padding-bottom: 80px ;
+}
 
 /*Responsive design*/
 
@@ -439,8 +486,11 @@
     .cover-footer{
       padding-left: 2%;
     }
-    .mouse-button{
+    .info-video{
+      padding-top: 0px !important;
+      padding-bottom: 15%  !important;
     }
+    
 }
 /*Above 5" phone*/
 @media only screen and (max-width:580px)
@@ -461,6 +511,7 @@
     .cover-footer{
       padding-left: 4% !important;
     }
+    
   }  
 /*Iphone SE category*/
 @media only screen and (max-width:320px)
@@ -472,6 +523,5 @@
     padding-top: 5%;
     }
   }  
- .cover-footer{
- }
+  
 }
