@@ -11,6 +11,7 @@
 	<script src="./files/jquery.min.js.download"></script>
 	<script src="./files/bootstrap.min.js.download"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -68,12 +69,12 @@
 		</div>
 	</div>
 	<section class="about" id="about">
-		<h2 class="text-center about-typo">About us</h2>
-		<div class="col-sm-6">
-			<img src="img/demo.jpg" alt="">
+		<h2 class="text-center about-typo " data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">About us</h2>
+		<div class="col-sm-6 Aravind-photo" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
+			<img src="img/demo.jpg" alt="" class="">
 		</div>
 		<div class="col-sm-6 about-box">
-			<div class="about-content">
+			<div class="about-content " data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
 			<h3>What is Lorem Ipsum?</h3>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 					t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
@@ -82,20 +83,51 @@
 		</div>
 		</div>
 	</section>
+	<section class="gallery">
+		
+	</section>
 
+			<section class="pricing " id="services">
+			<center>
+				<h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">Our services</h2>
+				<div class="container">
+					<div class="col-sm-4 box" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
+						<div class="card card3">
+							<h3>BASIC</h3>
+							<h2>Free</h2>
+							<h4>Free</h4>
+							<hr>
+							<p>10 templates</p>
+							<p>Default presets</p>
+							<div>Book</div>
+						</div>
+					</div>
+					<div class="col-sm-4 box"data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
+						<div class="card card3">
+							<h3>PRO</h3>
+							<h2>100</h2>
+							<h4>$100</h4>
+							<hr>
+							<p>50 templates</p>
+							<p>Pro presets</p>
+							<div>Book</div>
+						</div>
+					</div>
 
-	<section id="info" class="info-video">
-			<div id="video">
-			<font size="5px"><center><h1></h1></center></font>
-			<div id="video-section"><center>
-			<video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-			<source src="video/promo.mp4">
-			</center>
-			</video>
-			</div>
-			</div>
-			</section>
-						
+					<div class="col-sm-4 box" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
+						 <div class="card card3">
+							<h3>ULTIMATE</h3>
+							<h2>250</h2>
+							<h4>$250</h4>
+							<hr>
+							<p>Unlimited templates</p>
+							<p>Ultimate presets</p>
+							<div>Book</div>
+					 </div>
+					</div>
+					 </div>
+					 
+					</section>
 </body>
 
 	<script type="text/javascript">
@@ -149,6 +181,9 @@
    });
  });
  </script> 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
