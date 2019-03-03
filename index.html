@@ -47,8 +47,21 @@
 			</div>
 			<div class="row ">
 				<div class="cover-footer">
-				<div class="col-sm-6"></div>
-				<div class="col-sm-6 "><h4>Best place to enjoy  wagamon</h4></div>
+				<div class=" col-sm-6 dai"><h4>Best place to enjoy  wagamon</h4></div>
+				<div class="col-sm-6 mouse-button">
+					<a href="#About">
+					<div class="mouse_scroll">
+					<div class="mouse">
+						<div class="wheel"></div>
+					</div>
+					<div>
+						<span class="m_scroll_arrows unu"></span>
+						<span class="m_scroll_arrows doi"></span>
+						<span class="m_scroll_arrows trei"></span>
+					</div>
+				</div>
+				</a>
+			</div>
 				</div>
 			</div>
 		</div>
@@ -62,6 +75,7 @@
 	</p>
 </section>
 </body>
+
 	<script type="text/javascript">
 	$(document).ready(function () {
 	    //Disable mouse right click
@@ -97,7 +111,22 @@
 	});
 		});
 </script>
-
+<!--Smooth Scroll-->
+ <script>
+ $(document).ready(function(){
+   $("a").on('click', function(event) {
+	 if (this.hash !== "") {
+	   event.preventDefault();
+	   var hash = this.hash;
+	   $('html, body').animate({
+		 scrollTop: $(hash).offset().top
+	   }, 900, function(){
+		 window.location.hash = hash;
+	   });
+	 } // End if
+   });
+ });
+ </script> 
 
 </body>
 </html>

@@ -1,5 +1,14 @@
+/*----------
+1.desktop view
+2.Responsive design
+*/
+
+
 /*Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+
 
 /*Desktop view*/
 .background-cover{
@@ -143,14 +152,186 @@
 }
 .cover-footer{
   transform: translateY(400px);
-  padding-left: 7%;
+  padding-left:25%;
 
 
 }
-.cover-footer .location{
-  font-size: 25px;
+/*Mouse button*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
+.mouse_scroll {
+  cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
 }
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid rgb(36, 38, 58);
+  border-bottom: 2px solid rgb(36, 38, 58);
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid rgb(36, 38, 58);
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: rgb(36, 38, 58);
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid rgb(36, 38, 58);
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@-o-keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+
 
 /*Responsive design*/
 
@@ -219,7 +400,7 @@
         color: black !important;
     }
     .background-cover{
-      height: 95vh;
+      height: 100vh;
       width: 100%;
     }
     .background-cover h1{
@@ -234,11 +415,7 @@
     }
     .cover-footer{
       transform: translateY(180px);
-      text-align: left;
     
-    }
-    .cover-footer .location{
-      font-size: 16px !important;
     }
     .intro-option2 h4{
       text-align: center;
@@ -248,6 +425,7 @@
       color: rgba(31, 31, 82, 0.856);
     }
     .cover-footer h4{
+      
       font-size: 15px;
     }  
     .cover-footer h4::before {
@@ -258,10 +436,18 @@
       margin: 0 rem;
       transform: translateY(-.5rem);
     }
-    
+    .cover-footer{
+      padding-left: 2%;
+    }
+    .mouse-button{
+    }
 }
+/*Above 5" phone*/
 @media only screen and (max-width:580px)
 {
+  #home{
+    padding-top: 10% ;
+  }
   .background-cover h1{
 
     font-size: 40px !important;
@@ -269,6 +455,23 @@
   .intro-option2 h1{
     font-size: 24px !important;
   }
+  .mouse-button{
+    padding-top: 12%;
+    }
+    .cover-footer{
+      padding-left: 4% !important;
+    }
+  }  
+/*Iphone SE category*/
+@media only screen and (max-width:320px)
+{
+  #home{
+    padding-top: 0px !important;
+  }
+  .mouse-button{
+    padding-top: 5%;
+    }
+  }  
+ .cover-footer{
+ }
 }
-
-
