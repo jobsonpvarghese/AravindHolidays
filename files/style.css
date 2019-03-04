@@ -8,7 +8,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 @import url('https://fonts.googleapis.com/css?family=Anton|Carter+One');
-
+@import url('https://fonts.googleapis.com/css?family=Laila|Merriweather|Roboto');
 /*Desktop view*/
 .background-cover{
 	background:url(../img/bg.jpg);
@@ -329,42 +329,60 @@
   50%  { opacity: .5; }
   100% { opacity: 1; }
 }
-.about{
-  padding-top: 80px;
-  padding-bottom: 20%;
+
+.About{
+  padding-top: 10%;
+  margin-bottom: 35%;
 }
-.about img{
-  height: 100%;
+.About h2{
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+.About p{
+  font-family: 'Roboto', sans-serif;
+}
+.About img{
+
   width: 100%;
 }
-.about-typo{
-  padding-bottom: 3%;
+.About-text{
+  padding:10%;
 }
-
-.about h2{
-    font-size:40px;
-    font-weight: bold;
+.About p{
+  padding-top: 10%;
 }
-.about-content{
-  padding:5%;
-  box-shadow:  5px 10px 10px #2b2a2a77;
-  background-color: rgba(238, 235, 235, 0.233);
-  border-radius: 5px;
-  
+.details{
+  margin-top: 20%;
+  height: 70vh;
+  background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-attachment: fixed;
 }
-.about-box{
+.details .icon{
+  color: rgba(48, 47, 45, 0.925);
+  font-size: 70px;
+}
+.details h2{
+  color: rgba(48, 47, 45, 0.925);
   padding-top: 5%;
- 
+  padding-bottom: 3%;
+  font-family: 'Merriweather', serif;
+font-weight: bold;
 }
-.Aravind-photo img{
-  border-radius: 50px;
-}
+.details h3{
+  color: rgba(48, 47, 45, 0.925);
 
-.box{
-  padding-bottom: 10%;
+}
+.details .serv-text{
+  padding-top: 6%;
+  color: rgba(48, 47, 45, 0.925);
+  font-family: 'Laila', serif;
+  font-weight: bold;
 }
 .pricing{
-  margin-top:20%;
+  padding-top: 5%;
 }
 /*Responsive design*/
 
@@ -476,7 +494,7 @@
       padding-top: 0px !important;
       padding-bottom: 15%  !important;
     }
-  
+    
 }
 /*Above 5" phone*/
 @media only screen and (max-width:580px)
@@ -497,6 +515,21 @@
     .cover-footer{
       padding-left: 4% !important;
     }
+    .details{
+      height: 155vh;
+    }
+    .details h2{
+      padding-top: 15% !important;
+      padding-bottom: 5% !important;
+    
+    }
+    .grid{
+      padding-bottom: 10%;
+    }
+    .box{
+      padding-bottom: 5%;
+    }
+
     
   }  
 /*Iphone SE category*/
